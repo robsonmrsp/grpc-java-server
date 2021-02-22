@@ -1,0 +1,16 @@
+syntax = "proto3";
+package helloworld;
+option java_package = "br.com.robsonmrsp.proto";
+option java_multiple_files = true;
+
+message HelloWorldMessageRequest {
+	string myName = 1;		
+}
+
+message HelloWorldMessageResponse {
+	string greeting = 1;		
+}
+
+service HelloWorldService{
+	rpc SayHello (HelloWorldMessageRequest) returns (HelloWorldMessageResponse) {}
+}
