@@ -12,5 +12,5 @@ message HelloWorldMessageResponse {
 }
 
 service HelloWorldService{
-	rpc SayHello (HelloWorldMessageRequest) returns (HelloWorldMessageResponse) {}
+	rpc sayHello (HelloWorldMessageRequest) returns (HelloWorldMessageResponse) {}
 }
